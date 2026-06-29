@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CyberShield Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🔐 CyberShield Pro</h1>
+  <p>Advanced Cyber Security Awareness Dashboard</p>
+</header>
+
+<div class="layout">
+
+  <!-- MAIN AREA -->
+  <div class="main">
+
+    <!-- PASSWORD CHECKER -->
+    <div class="card">
+      <h2>🔑 Password Strength Checker</h2>
+
+      <input type="password" id="password" placeholder="Enter password">
+
+      <div class="bar">
+        <div id="strengthBar"></div>
+      </div>
+
+      <button onclick="checkPassword()">Check Password</button>
+      <p id="message"></p>
+    </div>
+
+  </div>
+
+  <!-- RIGHT SIDEBAR -->
+  <div class="sidebar">
+
+    <!-- QUIZ -->
+    <div class="card small">
+      <h3>🧠 Cyber Security Quiz</h3>
+
+      <p id="question">Loading question...</p>
+
+      <button onclick="answer(true)" id="opt1">Option 1</button>
+      <button onclick="answer(false)" id="opt2">Option 2</button>
+
+      <p id="quizResult"></p>
+      <button onclick="nextQuestion()">Next Question</button>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="card small">
+      <h3>📞 Contact Me</h3>
+
+      <input type="text" id="name" value="Dhruv Prajapati">
+      <input type="email" id="email" value="dhruvprjapatiyashprajapati@gmail.com">
+      <input type="text" value="+91 7878054055" readonly>
+
+      <textarea id="msg" placeholder="Write your message..."></textarea>
+
+      <button onclick="send()">Send Message</button>
+
+      <p id="contactResult"></p>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 CyberShield Pro | Cyber Security Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

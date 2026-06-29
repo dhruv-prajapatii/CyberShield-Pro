@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: radial-gradient(circle, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,255,150,0.1);
+  box-shadow: 0 0 15px #00ff99;
+}
+
+/* LAYOUT */
+.layout {
+  display: flex;
+}
+
+/* MAIN */
+.main {
+  flex: 2;
+  padding: 20px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  border-left: 2px solid rgba(0,255,150,0.2);
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  margin: 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,255,150,0.3);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.small {
+  font-size: 14px;
+}
+
+/* INPUT */
+input, textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 6px 0;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+/* BUTTON */
+button {
+  background: #00ff99;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 8px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #00cc77;
+}
+
+/* PASSWORD BAR */
+.bar {
+  width: 90%;
+  height: 8px;
+  background: gray;
+  margin: 10px 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#strengthBar {
+  height: 100%;
+  width: 0%;
+  background: red;
+  transition: 0.3s;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  background: rgba(0,0,0,0.4);
+}
